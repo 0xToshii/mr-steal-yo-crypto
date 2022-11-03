@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="static/css/style.css">
+
+    <title>Mr Steal Yo Crypto</title>
+    <meta property="og:title" content="Mr Steal Yo Crypto CTF">
+    <meta property="og:locale" content="en_US">
+    <meta name="description" content="Challenges to learn offensive security of smart contracts">
+    <meta name="keywords" content="smart contracts, defi, security, offensive, blockchain, ethereum, hacking">
+    <meta property="og:site_name" content="Mr Steal Yo Crypto">
+  </head>
+
+  <body>
+    <header>
+      <div style="text-align: center;" class="container">
+        
+        <h1><a href="">Mr Steal Yo Crypto</a></h1>
+        
+        <h2>The offensive security playground for exploiting smart contracts</h2>
+
+        <section id="links">
+          <a href="https://twitter.com/0xToshii">Created by @0xToshii</a>
+        </section>
+      
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+
+        <p>Mr Steal Yo Crypto is a series of wargame challenges where you are tasked with exploiting smart contracts covering varying use cases within crypto.</p>
+
+        <p>The challenges are loosely (or directly) inspired by real world exploits. Throughout numerous challenges you will build the skills necessary to become a hunter in the space.</p>
+
+        <h1 id="challenges">Challenges</h1>
+
+        <p>Each challenge can be considered standalone. Depending on the challenge, you should either stop the system from working, take as much funds as possible, or do some other unexpected things. Each vary in difficulty.</p>
+
+        <table>
+          <thead>
+            <tr>
+              <th style="text-align: left">#</th>
+              <th style="text-align: left">Name</th>
+              <th style="text-align: left"></th>
+            </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>        
+
+        <h1 id="how-to">How to play</h1>
+
+        <ol>
+          <li>Clone <a href="https://github.com/0xToshii/mr-steal-yo-crypto-ctf">the repository</a></li>
+          <li>Run <code>git checkout implement</code></li>
+          <li>Install dependencies with <code>yarn</code></li>
+          <li>Code your solutions in the associated files in the <code>test</code> folder</li>
+          <li>Run your exploit for a challenge with <code>yarn hardhat test test/challenge-name.ts</code>. If the challenge is executed successfully, you've passed!</li>
+        </ol>
+
+        <h2 id="tips">Tips</h2>
+
+        <ul>
+          <li>In all challenges you must use the account called <code>attacker</code>. In Ethers, that may translate to using <a href="https://docs.ethers.io/v5/single-page/#/v5/api/contract/contract/-%23-Contract-connect"><code>.connect(attacker)</code></a>.</li>
+          <li>To code the solutions, you may need to refer to <a href="https://docs.ethers.io/v5/single-page/">Ethers</a> and <a href="https://hardhat.org/getting-started/">Hardhat</a> docs.</li>
+          <li>In some cases, you may need to code and deploy custom smart contracts.</li>
+        </ul>
+      </section>
+    </div>
+    <footer>
+      <div class="container">
+        <p>Inspired by <a href="https://damnvulnerabledefi.xyz" target="_blank">Damn Vulnerable Defi</a>.</p>
+      </div>
+    </footer>
+</body>
+</html>
