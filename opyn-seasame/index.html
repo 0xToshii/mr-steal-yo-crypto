@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../static/css/style.css">
+
+    <title>Mr Steal Yo Crypto CTF</title>
+    <link rel="icon" href="../static/img/untitled_b.png" type="image/png">
+    <meta property="og:image" content="https://raw.githubusercontent.com/0xtoshii/mr-steal-yo-crypto/main/static/img/untitled_a.png">
+    <meta property="og:description" content="Solidity CTF challenges inspired by real world exploits">
+    <meta property="og:title" content="Mr Steal Yo Crypto CTF">
+    <meta property="og:locale" content="en_US">
+    <meta name="description" content="Challenges to learn offensive security of smart contracts">
+    <meta name="keywords" content="smart contracts, defi, security, offensive, blockchain, ethereum, hacking">
+    <meta property="og:site_name" content="Mr Steal Yo Crypto">
+  </head>
+
+  <body>
+    <header>
+      <div style="text-align: center;" class="container">
+        
+        <h1>Mr Steal Yo Crypto</h1>
+        
+        <h2>The offensive security playground for exploiting smart contracts</h2>
+
+        <section id="links">          
+          <a href="https://twitter.com/0xToshii">Created by @0xToshii</a>
+        </section>
+      
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+
+        <h6><a href="../index.html">&lt; Back to challenges</a></h6>
+
+        <h1>Challenge 17 - Opyn Seasame</h1>
+
+        <p>
+          There's an OptionsContract which allows users to issue ETH-USDC put options. It represents the premium for a given series of options as an ERC20 token, allowing for AMM pricing and liquidity.
+        </p>
+        <p>
+          So far 5 users have used the contract and sold put options.
+        </p>
+        <p>
+          Your task is to take all the USDC from the contract.
+        </p>
+
+        <ul>
+            <li><a target="_blank" href="https://github.com/0xToshii/mr-steal-yo-crypto-ctf/tree/implement/contracts/opyn-seasame">See the contracts</a></li>
+            <li><a target="_blank" href="https://github.com/0xToshii/mr-steal-yo-crypto-ctf/blob/implement/test/17-opyn-seasame.ts">Complete the challenge</a></li>
+        </ul>
+      </section>      
+    </div>
+</body>
+</html>
